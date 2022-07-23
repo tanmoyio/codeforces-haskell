@@ -1,12 +1,12 @@
 {- Author :: Tanmoy Sarkar
- - Problem :: Watermelon}
+ - Problem :: Watermelon -}
 
 
 modCheck n
-        | mod n 2 == 0  = "YES"
+        | mod n 2 == 0 && n >= 4 = "YES"
         | otherwise   = "NO"
 
 main = do 
         x <- readLn
         let res = modCheck x
-        print res
+        putStrLn res
