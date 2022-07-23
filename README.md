@@ -1,2 +1,1 @@
-# codeforces-haskell
-Codeforces solutions in Haskell
+# Codeforces Haskell
