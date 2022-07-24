@@ -3,10 +3,7 @@
 
 
 modCheck n
-        | mod n 2 == 0 && n >= 4 = "YES"
-        | otherwise   = "NO"
-
-main = do 
-        x <- readLn
-        let res = modCheck x
-        putStrLn res
+        | mod n 2 == 0 && n >= 4  =  "YES"
+        | otherwise               =  "NO"
+ 
+main = interact $ id . modCheck . head . map read . words
